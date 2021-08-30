@@ -2,9 +2,9 @@
 
 __author__ = "730240245"
 
-int: str = input("Left-hand side: 4")
-int: str = input("Right-hand side: 6")
-print("4 < 6" + " is " + )
-print("4 >= 6" + " is " + "False")
+int1 = input("Left-hand side: ")
+int2 = input("Right-hand side: ")
+print(int1 + " < " + int2 + " is " + str(int1<int2))
+print(int1 + " >=" + int2 + " is " + str(int1>=int2))
 print("4 == 6" + " is " + "False")
 print("4 != 6" + " is " + "True")
