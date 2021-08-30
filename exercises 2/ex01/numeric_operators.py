@@ -1,4 +1,4 @@
-"""numeric operators program."""
+"""numeric operators program"""
 
 __author__ = "730240245"
 
