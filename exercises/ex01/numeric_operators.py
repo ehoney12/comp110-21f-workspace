@@ -2,9 +2,9 @@
 
 __author__ = "730240245"
 
-str = input("Left-hand side: 9")
-str = input("Right-hand side: 3")
-print("9 ** 3" + " is " + "729")
-print("9 / 3 " + "is " + "1.8")
+int1 = int(input("Left-hand side: "))
+int2 = int(input("Right-hand side: "))
+print(int1 +  **  + int2 + " is " + (int1 ** int2))
+print(int1 +  "/"  + int2 + "is " + (int1 / int2))
 print("9 // 3 " + "is " + "3")
 print("9 % 3 " + "is " + "0")
