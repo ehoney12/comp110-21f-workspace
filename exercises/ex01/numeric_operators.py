@@ -1,6 +1,6 @@
 """numeric operators program"""
 
-__author__ = 730240245
+__author__ = "730240245"
 
 str = input("Left-hand side: 9")
 str = input("Right-hand side: 3")
