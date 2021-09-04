@@ -1,4 +1,4 @@
-"""hype machine program."""
+"""Elizabeth's hype machine program."""
 
 __author__ = "730240245"
 
