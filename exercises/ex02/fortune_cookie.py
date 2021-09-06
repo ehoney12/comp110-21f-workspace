@@ -18,18 +18,19 @@ fortune_two: int = 2
 fortune_three: int = 3 
 fortune_four: int = 4
 str = input("Your fortune cookie says...")
-random: int = int(randint(1, 4))
-if random == fortune_one:
+choose: int = int(randint(1, 4))
+if choose == fortune_one:
     print("You will do great on your next comp quiz.")
     print("Now, go spread positive vibes!")
 else: 
-    if random == fortune_two: 
+    if choose == fortune_two: 
         print("You will meet some amazing new people in the next few weeks of your life.")
         print("Now, go spread positive vibes!")
     else: 
-        if random == fortune_three: 
+        if choose == fortune_three: 
             print("You will win a student lottery ticket for the football game next week.")
             print("Now, go spread positive vibes!")
-        else: 
-            print("Someone you love will give you a big surprise.")
-            print("Now, go spread positive vibes!")
+        else:
+            if choose == fortune_four: 
+                print("Someone you love will give you a big surprise.")
+                print("Now, go spread positive vibes!")
