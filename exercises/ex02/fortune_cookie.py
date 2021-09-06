@@ -12,26 +12,24 @@ __author__ = "730240245"
 from random import randint
 
 
-one: int = 1
-two: int = 2 
-three: int = 3 
-four: int = 4
+# Begin your solution here...
+fortune_one: int = 1
+fortune_two: int = 2 
+fortune_three: int = 3 
+fortune_four: int = 4
 str = input("Your fortune cookie says...")
-from random import randint 
 random: int = int(randint(1, 4))
-if random == one:
+if random == fortune_one:
     print("You will do great on your next comp quiz.")
     print("Now, go spread positive vibes!")
 else: 
-    if random == two: 
+    if random == fortune_two: 
         print("You will meet some amazing new people in the next few weeks of your life.")
         print("Now, go spread positive vibes!")
     else: 
-        if random == three: 
+        if random == fortune_three: 
             print("You will win a student lottery ticket for the football game next week.")
             print("Now, go spread positive vibes!")
         else: 
             print("Someone you love will give you a big surprise.")
             print("Now, go spread positive vibes!")
-    
-
