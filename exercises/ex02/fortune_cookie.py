@@ -13,24 +13,24 @@ from random import randint
 
 
 # Begin your solution here...
-fortune_one: int = 1
-fortune_two: int = 2 
-fortune_three: int = 3 
-fortune_four: int = 4
-str = input("Your fortune cookie says...")
-choose: int = int(randint(1, 4))
-if choose == fortune_one:
-    print("You will do great on your next comp quiz.")
+fortune_one: str = "You will do great one you next comp quiz."
+fortune_two: str = "You will meet some amazing new people in the next few weeks of you life."
+fortune_three: str = "You will win a student lottery ticket for the football game next week."
+fortune_four: str = "Someone you love will give you a big surprise."
+str = input("Your fortune cookie says... ")
+choose: int = randint(1, 4)
+if choose == 1:
+    print(fortune_one)
     print("Now, go spread positive vibes!")
 else: 
-    if choose == fortune_two: 
-        print("You will meet some amazing new people in the next few weeks of your life.")
+    if choose == 2: 
+        print(fortune_two)
         print("Now, go spread positive vibes!")
     else: 
-        if choose == fortune_three: 
-            print("You will win a student lottery ticket for the football game next week.")
+        if choose == 3: 
+            print(fortune_three)
             print("Now, go spread positive vibes!")
         else:
-            if choose == fortune_four: 
-                print("Someone you love will give you a big surprise.")
+            if choose == 4: 
+                print(fortune_four)
                 print("Now, go spread positive vibes!")
