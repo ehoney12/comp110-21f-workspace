@@ -12,7 +12,6 @@ __author__ = "730240245"
 from random import randint
 
 
-
 # Begin your solution here...
 fortune_one: str = "You will do great one you next comp quiz."
 fortune_two: str = "You will meet some amazing new people in the next few weeks of you life."
