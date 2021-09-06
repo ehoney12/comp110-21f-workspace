@@ -10,6 +10,7 @@ __author__ = "730240245"
 # For example, consider the function call expression: randint(1, 100)
 # It will evaluate to an int value >= 1 and <= 100. 
 from random import randint
+choose: int = randint(1, 4)
 
 
 # Begin your solution here...
@@ -18,7 +19,6 @@ fortune_two: str = "You will meet some amazing new people in the next few weeks 
 fortune_three: str = "You will win a student lottery ticket for the football game next week."
 fortune_four: str = "Someone you love will give you a big surprise."
 str = input("Your fortune cookie says... ")
-choose: int = randint(1, 4)
 if choose == 1:
     print(fortune_one)
     print("Now, go spread positive vibes!")
