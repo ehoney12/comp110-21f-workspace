@@ -67,7 +67,7 @@ def goodbye() -> None:
     
 
 def guess() -> None: 
-    """Guessing the Murderer"""
+    """Guessing the Murderer."""
     print(f"So {player} think you're ready to guess the murder?")
     print("It will cost you 50 points for each attempt to guess the murderer")
     print("If you guess correcly, you win 1000 points and You win the game!")
@@ -95,7 +95,7 @@ def guess() -> None:
                     print(f"remaining detective points = {points}")
                     again: str = input("Would you like to try again? type yes or no ")
                     if again == no: 
-                            return None
+                        return None
                     else: 
                         if points < 50: 
                             print("Sorry, looks like you don't have enough points to guess.")
