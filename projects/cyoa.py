@@ -2,7 +2,6 @@
 
 __author__ = 730240245
 
-#Global Variables
 player: str = ""
 points: int = 0
 sus_1: str = "Freddy"
@@ -12,6 +11,7 @@ sus_4: str = "Hally"
 yes: str = "yes"
 no: str = "no"
 i: int = 1 
+
 
 def main() -> None: 
     """The programs entrypoint."""
@@ -57,6 +57,7 @@ def main() -> None:
                     return None
         i = i 
 
+
 def goodbye() -> None: 
     """Goodbye Message."""
     print("I hope you enjoyed the game!")
@@ -64,6 +65,7 @@ def goodbye() -> None:
     print("Before you go, here are the total points you have accumalated throughout the game:")
     print(f"Detective points = {points}")
     
+
 def guess() -> None: 
     """Guessing the Murderer"""
     print(f"So {player} think you're ready to guess the murder?")
@@ -111,6 +113,7 @@ def guess() -> None:
             print("")
             return None
 
+
 def scene() -> None: 
     """Looking at the Murder Scene."""
     print(f"Hey {player}, You've arrived at the murder scene")
@@ -122,7 +125,7 @@ def scene() -> None:
     p: int = 1
     while p > 0:
         from random import randint
-        amount: int = randint(1,20)
+        amount: int = randint(1, 20)
         print("")
         print("Objects: weapon, body, door, living room, or quit")
         search: str = input("Choose which obects you'd like to inspect ")
@@ -150,6 +153,7 @@ def scene() -> None:
         print(f"Detective points = {points}")
         print("")
         p = p 
+
 
 def sally(x: int) -> int: 
     """Sally's profile."""
@@ -228,6 +232,7 @@ def greet() -> None:
     print("Guess the murderer correctly and you win the game")
     input("Press any key to continue ")
     print("")
+
 
 if __name__ == "__main__":
     main()
