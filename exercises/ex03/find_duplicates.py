@@ -15,6 +15,6 @@ while i < len(search):
             print("Found duplicate: " + str(not duplicate))
             i = len(search)
         j += 1 
-    if i == (len(search)-1):
+    if i == (len(search) - 1):
         print("Found duplicate: " + str(duplicate))
     i += 1 
