@@ -6,10 +6,12 @@ __author__ = "730240245"
 # TODO: Implement your functions here.
 def all(y: list[int], x: int) -> bool: 
     """Return True if list numbers match x, Return False otherwise or an Empty List."""
-    i: int  = 0 
+    i: int = 0 
+    if y == list():
+        return False 
     while i < len(y):
         number: int = y[i]
-        if x != number or y == list(): 
+        if x != number: 
             return False 
         i = i + 1 
     return True 
@@ -17,13 +19,18 @@ def all(y: list[int], x: int) -> bool:
 
 def is_equal(a: list[int], b: list[int]) -> bool: 
     """Return True if lists are equal, return false otherwise."""
-    i: int = 0 
-    while i < len(a): 
-        list_a: int = a[i]
-        list_b: int = b[i]
-        if len(a) != len(b) or list_a != list_b:
+    e: int = 1 
+    i: int = 0  
+    while e <= len(a) or e <= len(b):
+        if i >= len(a) or i >= len(b):
             return False 
-        i = i + 1 
+        while i < len(a): 
+            list_a: int = a[i]
+            list_b: int = b[i] 
+            if len(a) != len(b) or list_a != list_b:
+                return False 
+            i = i + 1 
+        return True 
     return True 
 
 
@@ -35,6 +42,6 @@ def max(input: list[int]) -> int:
     biggest: int = -99999 
     while i < len(input):
         if input[i] > biggest: 
-           biggest = input[i] 
+            biggest = input[i] 
         i = i + 1 
     return biggest
