@@ -1,12 +1,19 @@
+"""List utility functions part 2."""
+
+__author__ = "750240245"
+
+# Define your functions below"""
+
+
 def only_evens(x: list[int]) -> list:
     """Return list containing only even numbers of input list."""
     i: int = 0 
-    even: list = list()
+    even: list[int] = list()
     while i < len(x):
         number: int = x[i]
         remainder: int = number % 2
         if remainder == 0: 
-            even = even + number 
+            even.append(number) 
         i = i + 1 
     return even 
 
@@ -14,7 +21,7 @@ def only_evens(x: list[int]) -> list:
 def sub(p: list[int], a: int, b: int) -> list:
     """Return list of subset of given list."""
     subset: list[int] = list()
-    if len(p) == 0 or a > len(p) or b <= 0:
+    if len(p) == 0 or a >= len(p) or b <= 0:
         return subset
     if a < 0: 
         a = 0
@@ -34,13 +41,13 @@ def sub(p: list[int], a: int, b: int) -> list:
 def concat(one: list[int], two: list[int]) -> list:
     """Return list with all elements of given lists."""
     new: list[int] = list()
-    i: int = 0 
     j: int = 0 
+    while j < len(one):
+        add: int = one[j]
+        new.append(add)
+        j = j + 1
+    i: int = 0
     while i < len(two):
-        while j < len(one):
-            add: int = one[j]
-            new.append(add)
-            j = j + 1
         add2: int = two[i]
         new.append(add2)
         i = i + 1 
