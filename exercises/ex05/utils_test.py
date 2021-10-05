@@ -8,20 +8,20 @@ __author__ = "730240245"
 
 def test_only_evens_empty() -> None: 
     """Only_evens function edge case testing with empty list."""
-    even: list[int] = []
-    assert only_evens[even]
+    x: list[int] = []
+    assert only_evens(x) == []
 
 
 def test_only_evens_all() -> None:
     """Only_evens function use case testing all even numbers."""
-    even: list[int] = [2, 4, 6, 8, 10]
-    assert only_evens[even] == [2, 4, 6, 8, 10]
+    x: list[int] = [2, 4, 6, 8, 10]
+    assert only_evens(x) == [2, 4, 6, 8, 10]
 
 
 def test_only_evens_none() -> None:
     """Only_evens function use case testing with all odd numbers."""
-    even: list[int] = [1, 3, 5, 7, 9]
-    assert only_evens[even] == []
+    x: list[int] = [1, 3, 5, 7, 9]
+    assert only_evens(x) == []
 
 
 def test_sub_empty() -> None: 
