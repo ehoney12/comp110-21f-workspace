@@ -6,13 +6,13 @@ from exercises.ex06.dictionaries import invert, favorite_color, count
 __author__ = "730240245"
 
 
-def test_invert_same_key() -> None: 
-    """Invert function edge case testing with more than one of same key."""
-    input: dict[str, str] = {'bone': 'dog', 'toy': 'dog'}
-    assert invert(input) == KeyError("cannot have two of the same keys: make sure each of your values are unique")
+def test_invert_empty_dict() -> None: 
+    """Invert function edge case testing with empty dictionary."""
+    input: dict[str, str] = {}
+    assert invert(input) == {}
 
 
-def test_nvert_letters() -> None:
+def test_invert_letters() -> None:
     """Invert function use case testing with letters."""
     input: dict[str, str] = {'c': 'r', 't': 'q', 'b': 'w'}
     assert invert(input) == {'r': 'c', 'q': 't', 'w': 'b'}
@@ -57,4 +57,4 @@ def test_count_different_str() -> None:
 def test_count_duplicates_and_more() -> None: 
     """Count function use case testing with words that appear multiple times in list."""
     c: list[str] = ['coffee', 'sugar', 'spice', 'sugar', 'sugar', 'coffee', 'cream']
-    assert count(c) == {'cofee': 2, 'sugar': 3, 'spice': 1}
+    assert count(c) == {'coffee': 2, 'sugar': 3, 'spice': 1, 'cream': 1}

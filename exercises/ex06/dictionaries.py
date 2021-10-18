@@ -44,4 +44,5 @@ def count(c: list[str]) -> dict[str, int]:
             a[r] += 1 
         else: 
             a[r] = 1 
+        i += 1
     return a 
