@@ -25,31 +25,31 @@ def invert_words() -> None:
 
 
 def favorite_color_tie_between_two() -> None:
-    """Favorite_color function use case testing with """
+    """Favorite_color function use case testing with a tie between two colors."""
     x: dict[str, str] = {'Ally': 'blue', 'Karen': 'purple', 'Jeff': 'blue', 'Carol': 'purple'}
     assert favorite_color(x) == 'blue'
 
 
 def favorite_color_all_different_colors() -> None:
-    """Favorite_color function use case testing """
+    """Favorite_color function use case testing with all different colors."""
     x: dict[str, str] = {'Steven': 'green', 'Mark': 'grey', 'Tony': 'orange'}
     assert favorite_color(x) == 'green'
 
 
 def favorite_color_one_color() -> None:
-    """Favorite_color function edge case testing """
+    """Favorite_color function edge case testing with one color."""
     x: dict[str, str] = {'Mary': 'pink', 'Sara': 'pink', 'Anthony': 'pink'}
     assert favorite_color(x) == 'pink'
 
 
 def count_empty_list() -> None:
-    """Count functon edge case testing with empty list"""
+    """Count functon edge case testing with empty list."""
     c: list[str] = []
     assert count(c) == {}
 
 
 def count_different_str() -> None:
-    """count function use case testing with different words."""
+    """Count function use case testing with different words."""
     c: list[str] = ['fall', 'pumpkins', 'Halloween', 'candy']
     assert count(c) == {'fall': 1, 'pumpkins': 1, 'Halloween': 1, 'candy': 1}
 
